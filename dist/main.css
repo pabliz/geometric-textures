@@ -1,0 +1,74 @@
+@font-face {
+    font-family: "Neue Montreal Light";
+    src: url(assets/fonts/2636b343e7d71162e66306e0e22b52d3.woff) format("woff");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow: hidden;
+    color: #fff;
+    height: 100%;
+    background: transparent;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+
+.noise {
+    position: fixed;
+    z-index: 9000;
+    pointer-events: none;
+    top: 0;
+    opacity: 0.75;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(assets/images/b8f1e254fcc913972e23e5cf8be98400.png);
+    background-repeat: repeat;
+    background-position: top left;
+}
+
+.fullscreen__wrapper {
+    padding: 2.4rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.fullscreen__text {
+    cursor: pointer;
+    position: relative;
+    font-size: 2.4rem;
+    font-family: "Neue Montreal Light";
+    color: #92999B;
+}
+
+.fullscreen__text:after {
+    background: #92999B;
+    bottom: 0rem;
+    content: '';
+    height: 1px;
+    left: 0rem;
+    position: absolute;
+    transition: transform 0.7s;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: right center;
+}
+
+.fullscreen__text:hover:after {
+    transform: scaleX(1);
+    transform-origin: left center;
+}
+
+/*# sourceMappingURL=main.css.map*/
